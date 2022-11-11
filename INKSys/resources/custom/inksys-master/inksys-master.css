@@ -1,0 +1,18 @@
+﻿
+
+.topNavBar {
+    height: 50px;
+}
+.navbar-nav {
+    font-size: 1.5rem;
+}
+
+    .navbar-nav:nth-child(2) {
+        text-transform: uppercase;
+        margin-left: auto;
+        margin-right: 1.3rem;
+    }
+
+.logout {
+    color:#000;
+}

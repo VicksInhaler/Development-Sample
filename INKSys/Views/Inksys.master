@@ -1,0 +1,338 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Inksys.master.cs" Inherits="Views_Inksys" %>
+<%--USER MASTER PAGES--%>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>INKSYS</title>
+<!-- Theme style -->
+<link rel="stylesheet" href="../resources/dist/css/adminlte.min.css" />
+<link rel="stylesheet" href="../resources/plugins/fontawesome-free/css/all.min.css" />
+<!-- daterange picker -->
+<link rel="stylesheet" href="../resources/plugins/daterangepicker/daterangepicker.css" />
+<!-- Tempusdominus Bootstrap 4 -->
+<link rel="stylesheet" href="../resources/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" />
+<!-- DataTables -->
+<link rel="stylesheet" href="../resources/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css" />
+<link rel="stylesheet" href="../resources/plugins/datatables-responsive/css/responsive.bootstrap4.min.css" />
+<link rel="stylesheet" href="../resources/plugins/datatables-buttons/css/buttons.bootstrap4.min.css" />
+<asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+<body class="hold-transition layout-navbar-fixed">
+<form id="form1" runat="server">
+<!-- Site wrapper -->
+<div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="../../index3.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <i class="fas fa-sun fa-2x" style="color: orange" runat="server" id="Dayshift"></i>
+                <i class="fas fa-moon fa-2x" style="color: black" runat="server" id="Nighshift"></i>
+            </li>
+            <li class="nav-item dropdown">
+                <a id="dropdownSubMenu1" runat="server" href="#" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" class="nav-link dropdown-toggle"></a>
+                <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu dropdown-menu-right text-right border-0 shadow mt-3">
+                    <li style="color: crimson;">
+                        <asp:LinkButton ID="btnLogOut" OnClick="btnLogOut_Click"
+                        OnClientClick="return confirm('Are you sure you want to log-out?')" CssClass="nav-link"
+                        runat="server">Log Out</asp:LinkButton>
+                    </li>
+                    <li style="color: crimson;">
+                        <a href="#" class="nav-link">Change Password</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #2a3f54">
+
+        <!-- Brand Logo -->
+        <a href="#" class="brand-link">
+            <img src="../resources/img/inksyslogo.png" alt="Inksys Logo" class="brand-image" style="opacity: .8">
+            <span class="brand-text font-weight-light">Administrator</span>
+        </a>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user NICK NAME -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="info" style="margin: auto;">
+                    <asp:Label ID="lblNickname" runat="server" Style="font-size: 25px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: yellow;" />
+                    <br />
+                    <asp:Label ID="lblPosition" runat="server" Style="font-size: 15px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: white;" />
+                </div>
+            </div>
+            <!-- SidebarSearch Form -->
+         
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <li class="nav-header">IBPP</li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-table"></i>
+                            <p>
+                                BACS Forms              
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="IBPP_Curing.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>IBPP Curing</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="IBPP_BottleAssy.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>IBPP Bottle Assy</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="IBPP_Sampling.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>IBPP Sampling</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="IBPP_NG.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>IBPP NG</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-table"></i>
+                            <p>
+                                CSS Forms
+               
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="IBPP_Cap.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Cap</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="IBPP_Spout.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Spout</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="IBPP_SlitValve.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Slit Valve</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-header">IPS</li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-table"></i>
+                            <p>
+                                Parts Scanning
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="../tables/simple.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Simple Tables</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../tables/data.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>DataTables</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../tables/jsgrid.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>jsGrid</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-table"></i>
+                            <p>
+                                Return Item Forms
+               
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="../tables/simple.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Simple Tables</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../tables/data.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>DataTables</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../tables/jsgrid.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>jsGrid</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-header">AUTO-MP</li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-table"></i>
+                            <p>
+                                Forms
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="AutoMP_CapAssembly.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>C1:Cap Assembly</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="AutoMP_IncomingBottle.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>C2:Incoming Bottle</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="AutoMP_InkFusion.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>C2:Ink Fusion</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="AutoMP_ManualPacking.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Manual Packing</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="AutoMP_VacuumSealing.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Vacuum Sealing</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="AutoMP_FinalPackBottle.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Final:Pack Bottle</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="AutoMP_FinalBottleAssy.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Final:Bottle Assy</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="AutoMP_Others.aspx" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Others</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+    <div>
+        <div class="content-wrapper" style="background-color: lightgrey;">
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+        <div class="float-right d-none d-sm-block">
+            <b>Version</b>0.0.0.1
+   
+        </div>
+        <strong>IPD Parts Traceability System</strong>
+
+
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+
+<!-- jQuery -->
+<script src="../resources/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../resources/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--Input Mask-->
+<script src="../resources/plugins/moment/moment.min.js"></script>
+<script src="../resources/plugins/inputmask/jquery.inputmask.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="../resources/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- DataTablBootstrap Plugins -->
+<script src="../resources/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../resources/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../resources/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../resources/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../resources/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../resources/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../resources/plugins/jszip/jszip.min.js"></script>
+<script src="../resources/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../resources/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../resources/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../resources/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../resources/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+<!--AdminLTE js-->
+<script src="../resources/dist/js/adminlte.min.js"></script>
+<asp:ContentPlaceHolder ID="footer" runat="server">
+</asp:ContentPlaceHolder>
+
+</form>
+</body>
+</html>

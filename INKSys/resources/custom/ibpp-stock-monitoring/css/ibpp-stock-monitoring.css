@@ -1,0 +1,263 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;1,900&display=swap');
+
+.* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+/* -- CARD BODY --*/
+.card-body .divider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.divider span {
+    width: 100%;
+    border: 1px solid #000;
+}
+/* -- END CARD BODY --*/
+
+
+/*-- STOCKS PARTS --*/
+.small-box {
+    background: #FFCCCC;
+}
+
+    .small-box > .small-box-footer {
+        position: relative;
+        font-size: 1.5rem;
+        background: #CB4154;
+        color: rgba(255,255,255,.8);
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px 0;
+        height: 50px;
+        z-index: 10;
+    }
+
+    .small-box > .inner {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+/*-- END STOCKS PARTS --*/
+
+
+/* -- SHIFT -- */
+.shift {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-shift {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FF9900;
+    padding: .5rem;
+    height: 40px;
+}
+
+.night-shift {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #2E3033;
+    color: #fff;
+    padding: .5rem;
+    height: 40px;
+}
+
+/* -- CURING MACHINE --*/
+.curing-machine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.curing-a {
+    font-size: 2.2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #00A8C9;
+    padding: .5rem;
+    height: 40px;
+    width: 100px;
+}
+
+.curing-b {
+    font-size: 2.2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #DB3EB1;
+    padding: .5rem;
+    height: 40px;
+    width: 100px;
+}
+
+.curing-c {
+    font-size: 2.2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #E6DB63;
+    padding: .5rem;
+    height: 40px;
+    width: 100px;
+}
+/* -- END LEGEND --*/
+
+/* --BUTTONS -- */
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.button-group {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #212121;
+    border-radius: .5rem;
+    border-top-right-radius:.5rem;
+    border-bottom-right-radius:.5rem;
+    height: 60px;
+    width: 100%;
+    margin: .5rem;
+}
+
+.available {
+    background: #009900;
+}
+
+.return {
+    background: #666666;
+}
+/* -- END BUTTONS -- */
+
+
+/* -- IN STOCKS -- */
+.lbl-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.label-group {
+    height: 60px;
+}
+
+.stocks-name {
+    font-size: 2rem;
+    text-transform:uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.amount {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #FFCC99;
+    width: 50%;
+}
+/* -- END IN STOCKS -- */
+
+
+/* -- FILTER --*/
+.filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.filter-button {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    width: 100px;
+    height: 50px;
+    background: #625B63;
+    color: #fff;
+}
+
+.search-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+/* -- END FILTER --*/
+
+/*-- TABLE --*/
+.available-table thead {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #8982A1;
+    text-align: center;
+}
+/*-- END TABLE --*/

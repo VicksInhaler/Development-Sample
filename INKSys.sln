@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "INKSys", "INKSys\", "{F425D42B-64A3-44D3-B6AE-07EC7F11BCF0}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52884"
+		Debug.AspNetCompiler.PhysicalPath = "INKSys\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52884\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52884"
+		Release.AspNetCompiler.PhysicalPath = "INKSys\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52884\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52884"
+		SlnRelativePath = "INKSys\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F425D42B-64A3-44D3-B6AE-07EC7F11BCF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F425D42B-64A3-44D3-B6AE-07EC7F11BCF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E38D65B-7B17-4478-893E-859BC815786D}
+	EndGlobalSection
+EndGlobal

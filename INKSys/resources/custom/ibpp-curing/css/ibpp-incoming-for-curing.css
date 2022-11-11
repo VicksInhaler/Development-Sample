@@ -1,0 +1,303 @@
+﻿
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*/
+.* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*font-family: 'Poppins',sans-serif;*/
+    font-weight: 400;
+}
+
+.label {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+.required {
+    font-size: 1rem;
+    font-weight: bold;
+    color: red;
+}
+
+
+.form-control {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: 1px solid #000;
+    color: #000;
+}
+
+    .form-control:focus {
+        box-shadow: none !important;
+        border: 2px solid #D48 !important;
+        outline: none;
+        color: #000;
+    }
+
+.input-group-text i {
+    font-size: 1.5rem;
+}
+
+.divider span {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+/* CARD */
+
+.card {
+    margin: 1rem;
+    box-shadow: 0 15px 30px hsl(210deg 50% 50%);
+    background: #D3D3E0;
+}
+
+.card-body .row .col-md-4 {
+    padding-top: 1rem;
+}
+
+.card-body .divider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.card-header {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+    .card-header h5 {
+        margin-left: 1rem;
+        margin-top: .5rem;
+    }
+/* END CARD */
+
+/* LEGEND */
+.legend {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+/* SHIFT */
+.shift {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.shift-legend {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.day-shift {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FF9900;
+    padding: .5rem;
+    height: 60px;
+}
+
+.night-shift {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #2E3033;
+    color: #fff;
+    padding: .5rem;
+    height: 60px;
+}
+
+/* CURING MACHINE */
+.curing-machine-legend {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.curing-a {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #00A8C9;
+    padding: .5rem;
+    height: 60px;
+}
+
+.curing-b {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #DB3EB1;
+    padding: .5rem;
+    height: 60px;
+}
+
+.curing-c {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #E6DB63;
+    padding: .5rem;
+    height: 60px;
+}
+/* END LEGEND */
+
+/* FILTER */
+.filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.filter-button {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    margin: .25rem;
+    height: 40px;
+    width: 100px;
+    border: none;
+    background: #FA6B55;
+}
+
+    .filter-button:hover {
+        background: #FF9585;
+    }
+/*  END FILTER */
+
+/* TABLE */
+.curing-table thead {
+    font-weight: 400;
+    text-transform: uppercase;
+    background: #8982A1;
+    text-align: center;
+}
+
+    .curing-table thead th {
+        border: 1px solid #5E575E;
+    }
+
+.curing-table tbody {
+    background: #fff;
+    text-align: center;
+}
+
+    .curing-table tbody td {
+        border: 1px solid #5E575E;
+    }
+/* END TABLE */
+/*  BUTTONS */
+.button-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.action-button {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    margin: .25rem;
+    height: 40px;
+}
+
+    /* CHANGE MODEL BUTTON */
+    /*    .action-button:first-child {
+        color: #fff;
+        background: #212121;
+        border: none;
+        outline: none;
+    }
+
+        .action-button:first-child:hover {
+            color: #fff;
+            background: #545252;
+            border: none;
+            outline: none;
+        }*/
+
+    /* UPDATE BUTTON */
+    .action-button:first-child {
+        color: #fff;
+        background: #004AB3;
+        border: none;
+        outline: none;
+        width: 100px;
+    }
+
+        .action-button:first-child:hover {
+            color: #fff;
+            background: #438AF0;
+            border: none;
+            outline: none;
+        }
+
+    /* SAVE BUTTON */
+    .action-button:last-child {
+        color: #fff;
+        background: #007A00;
+        border: none;
+        outline: none;
+        width: 100px;
+    }
+
+        .action-button:last-child:hover {
+            color: #fff;
+            background: #269E26;
+            border: none;
+            outline: none;
+        }

@@ -1,0 +1,178 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;1,900&display=swap');
+
+.* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+.form-control {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 2px solid #000;
+}
+/* -- CARD BODY --*/
+.card-body .row .col-md-4 {
+    padding-top: 1rem;
+}
+
+.card-body .divider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.divider span {
+    width: 100%;
+    border: 1px solid #000;
+}
+/* -- END CARD BODY --*/
+
+/* --BUTTONS -- */
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-group {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #212121;
+    border-radius: .5rem;
+    height: 60px;
+    width: 100%;
+    margin: .5rem;
+}
+
+.button-group-modals {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid #212121;
+    border-radius: .5rem;
+    height: 50px;
+    width: 90%;
+    margin: .5rem;
+}
+.update {
+    background: #3366FF;
+}
+
+.save {
+    background: #03A803;
+}
+
+.add {
+    border-radius: 0;
+    border: 1px solid #212121;
+}
+/* --END BUTTONS -- */
+
+/* -- FILTER --*/
+.filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.filter-button {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    width: 100px;
+    height: 50px;
+    background: #625B63;
+    color: #fff;
+}
+
+.search-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+/* -- END FILTER --*/
+
+/* -- SHIFT -- */
+.shift {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-shift {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #c2b314;
+    padding: .5rem;
+    height: 40px;
+}
+
+.night-shift {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #2E3033;
+    color: #fff;
+    padding: .5rem;
+    height: 40px;
+}
+
+/*-- RETURN SLIT VALVE TABLE HEAD --*/
+.return-slitvalve-table thead {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #d13636;
+    text-align: center;
+}
+.return-slitvalve-table thead th {
+    border: 1px solid #5E575E;
+}
+
+.return-slitvalve-table tbody {
+    font-size: 1.2rem;
+    text-wrap:none;
+    background: #fff;
+    text-align: center;
+}
+
+    .return-slitvalve-table tbody td {
+        border: 1px solid #5E575E;
+    }
+/*-- END RETURN SLIT VALVE TABLE --*/
